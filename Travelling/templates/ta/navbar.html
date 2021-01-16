@@ -239,27 +239,6 @@ section a
       <p class="one">-</p>
       <h3>Travel over the world</h3>
       <h1 class="text-white" style="font-size:45px">Book your tickets Now</h1>
-      <table>
-        {% if not user.is_authenticated %}
-        <tr class="btn hov">
-          <td class="p-3">
-            <a href="#" class="text-dark" style="background: #fff;color:#000;text-decoration: none;">Learn more</a>
-          </td>
-          <td>
-            <a href="{% url 'rg' %}" class="text-white" style="background: #00b894; color:white;text-decoration: none;">signup here</a>
-          </td>
-        </tr>
-        {% else %}
-        <tr class="btn hov">
-          <td class="p-3">
-            <a href="#" class="text-dark" style="background: #fff;color:#000;text-decoration: none;">Learn more</a>
-          </td>
-          <td>
-            <a href="#" class="text-white" style="background: #00b894; color:white;text-decoration: none;">Explore</a>
-          </td>
-        </tr>
-        {% endif %}
-      </table>
     </section>
   </div>
 </section>

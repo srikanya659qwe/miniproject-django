@@ -11,10 +11,10 @@
 	{% endfor %}
 	{% endif %}
 	<div class="container">
-			<h2 class="p-3 text-white bg-primary my-2">Buses Information<span><a href="{% url 'addbus'%}" class="btn btn-success" style="float: right;">Add Bus</a></span>
+			<h2 class="p-3 text-white bg-primary my-2">Buses Information<span><a href="{% url 'addbus'%}" class="btn btn-primary" style="float: right;">Add Bus</a></span>
 			</h2>
 			<table class="table table-hover" border="1" style="width: 100%">
-				<tr class="bg-dark text-white">
+				<tr>
 					<th>S.no</th>
 					<th>Number</th>
 					<th>Source</th>
@@ -24,7 +24,7 @@
 					<th>Actions</th>
 				</tr>
 				{% for i in dis %}
-				<tr class="text-dark bg-warning">
+				<tr>
 					<td>{{forloop.counter}}</td>
 					<td>{{i.busid}}</td>
 					<td>{{i.source}}</td>
@@ -32,9 +32,10 @@
 					<td>{{i.timmings}}</td>
 					<td>{{i.busclass}}</td>
 					<td>
-						<a href="{% url 'disbus' i.id %}" class="btn btn-info">View Bus</a>
+						<a href="{% url 'disbus' i.id %}" class="btn btn-primary">View Bus</a>
 						<a href="{% url 'upbus' i.id%}" class="btn btn-primary">Edit Bus</a>
-						<a href="{% url 'del' i.id%}" class="btn btn-danger">Remove Bus</a>
+						<a href="{% url 'del' i.id%}" class="btn btn-primary">Remove Bus</a>
+						
 					</td>
 				</tr>
 				{% endfor %}

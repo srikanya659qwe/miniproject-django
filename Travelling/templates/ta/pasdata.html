@@ -11,7 +11,7 @@
 	{% endfor %}
 	{% endif %}
 <div class="container">
-			<h2 class="p-3 text-white bg-primary my-2">My Bookings<span><a href="{% url 'bus'%}" class="btn btn-success" style="float: right;">Book Ticket</a></span>
+			<h2 class="p-3 text-white bg-primary my-2">My Bookings<span><a href="{% url 'bus'%}" class="btn btn-primary" style="float: right;">Book Ticket</a></span>
 			</h2>
 			<table class="table table-hover" border="1" style="width: 100%">
 				<tr class="bg-dark text-white">
@@ -25,7 +25,7 @@
 					<th>Actions</th>
 				</tr>
 				{% for i in y %}
-				<tr class="text-dark bg-warning">
+				<tr class="text-dark bg-white">
 					<td>{{forloop.counter}}</td>
 					<td>{{i.pname}}</td>
 					<td>{{i.sorce}}</td>

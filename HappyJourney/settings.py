@@ -137,8 +137,8 @@ LOGIN_REDIRECT_URL = 'hm'
 EMAIL_USE_TLS = True
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
-EMAIL_HOST_USER = "guruvamsi061@gmail.com"
-EMAIL_HOST_PASSWORD = "vamsi2002"
+EMAIL_HOST_USER = "srikanya659@gmail.com"
+EMAIL_HOST_PASSWORD = "AMMAnanna"
 
 MEDIA_URL = "/images/"
 MEDIA_ROOT = os.path.join(BASE_DIR,'Travelling/static/images/')
